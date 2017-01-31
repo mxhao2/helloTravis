@@ -1,5 +1,8 @@
 language: python
 python:
   - "3.5"
+install:
+  python3 setup.py develop
+
 # command to run tests
-script: python test.py
+script: python3 test.py
