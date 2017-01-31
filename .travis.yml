@@ -1,6 +1,11 @@
 language: python
 python:
   - "3.5"
+addons:
+  apt:
+    packages:
+    - libblas-dev
+    - liblapack-dev
 
 before_install:
  - sudo apt-get install -qq python-numpy python-scipy
