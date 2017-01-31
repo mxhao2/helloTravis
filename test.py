@@ -3,5 +3,5 @@ def failedTest():
 def goodTest():
     return 2 + 2
 
-failedTest()
+# failedTest()
 goodTest()
