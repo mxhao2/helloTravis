@@ -1,17 +1,10 @@
 language: python
 python:
   - "3.5"
-addons:
-  apt:
-    packages:
-    - libblas-dev
-    - liblapack-dev
-    - gfortran
-
-
 before_install:
- - sudo apt-get install -qq python-numpy python-scipy
-
+  - sudo apt-get install libblas-dev
+  - sudo apt-get install liblapack-dev
+  - sudo apt-get install gfortran
 install:
   python3 setup.py develop
 
