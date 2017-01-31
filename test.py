@@ -1,1 +1,1 @@
-print("hello travis!")
+assert(1==2)
