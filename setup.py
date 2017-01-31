@@ -6,5 +6,5 @@ setup(name='helloTravis',
     author='Michael Hao',
     author_email='mike.hao@yahoo.com',
     install_requires=['markdown','pandas', 'pyparsing', 'requests', \
-    'scikit-learn', 'SciPy'],
+    'scikit-learn', 'SciPy', 'numpy'],
     zip_safe=False)
