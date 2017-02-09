@@ -9,7 +9,7 @@ install:
   # Install conda
   - sudo pip install conda
   # install deps
-  - pip install --upgrade pip enum34
+  - conda create -n py35 python=3.5
   - sudo conda init
   - sudo conda update conda --yes
   - deps='pip numpy pandas requests nose numpydoc sphinx'
