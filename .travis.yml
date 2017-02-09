@@ -9,13 +9,14 @@ install:
   # Install conda
   - sudo pip install conda
   # install deps
+  - pip install --upgrade pip enum34
   - sudo conda init
   - sudo conda update conda --yes
   - deps='pip numpy pandas requests nose numpydoc sphinx'
   - conda create -p $HOME/py --yes $deps "python=$TRAVIS_PYTHON_VERSION"
   - export PATH=$HOME/py/bin:$PATH
   # install your own package into the environment
-  - python setup.py install
+  # - python setup.py install
 
 notifications:
   email: false
