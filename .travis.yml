@@ -11,6 +11,7 @@ install:
   # install deps
   - sudo pip install enum34
   - sudo pip install ruamel_yaml==0.11.14
+  - sudo pip install urllib3 --upgrade
 
   - sudo conda init
   - sudo conda update conda --yes
