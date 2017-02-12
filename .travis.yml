@@ -10,7 +10,7 @@ before_install:
   - docker pull davidshen84/scikit-learn
   - docker run -d -p 127.0.0.1:80:4567 davidshen84/scikit-learn /bin/sh -c "cd /root/scikit-learn; bundle exec foreman start;"
   - docker ps -a
-  - docker run davidshen84/scikit-learn /bin/sh -c "cd /root/scikit-learn; bundle exec rake test"
+  - docker run davidshen84/scikit-learn
 
 
 notifications:
