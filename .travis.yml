@@ -9,8 +9,9 @@ services:
 before_install:
   - docker build -t davidshen84/scikit-learn .
   - docker run -d -p 127.0.0.1:80:4567 davidshen84/scikit-learn /bin/sh -c "cd /root/scikit-learn;"
-  # - docker ps -a
-  # - docker run davidshen84/scikit-learn
+
+install:
+   python setup.py develop
 
 
 notifications:
