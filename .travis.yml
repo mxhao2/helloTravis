@@ -8,8 +8,10 @@ services:
 
 before_install:
   - docker build -t scikit-learn .
+  - docker run scikit-learn
 
 
 notifications:
   email: false
 # command to run tests
+script: python3 test.py
