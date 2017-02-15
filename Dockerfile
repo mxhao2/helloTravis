@@ -1,5 +1,4 @@
-FROM davidshen84/jupyter
-MAINTAINER Xi Shen <davidshen84@gmail.com>
+FROM python:3.5
 
 RUN apt-get update && apt-get install -y \
     build-essential \
@@ -16,3 +15,12 @@ RUN pip3 install --upgrade \
     scikit-learn \
     matplotlib \
     pandas
+
+WORKDIR /app
+
+
+ADD test.py /app/test.py
+ADD setup.py /app/setup.py
+
+RUN python3 setup.py develop
+RUN python3 test.py
