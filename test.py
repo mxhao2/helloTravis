@@ -6,5 +6,5 @@ def goodTest():
     return 2 + 2
 
 # failedTest()
-goodTest()
+failedTest()
 print("Hello Travis!")
