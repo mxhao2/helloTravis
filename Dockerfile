@@ -21,6 +21,3 @@ WORKDIR /app
 
 ADD test.py /app/test.py
 ADD setup.py /app/setup.py
-
-RUN python3 /app/setup.py develop
-RUN python3 /app/test.py

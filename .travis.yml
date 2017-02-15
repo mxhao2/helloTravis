@@ -8,7 +8,7 @@ services:
 
 before_install:
   - docker build -t scikit-learn .
-  - docker run scikit-learn /bin/sh -c "cd /app/; python3 test.py"
+  - docker run scikit-learn /bin/sh -c "cd /app/; python3 setup.py develop; python3 test.py"
 
 
 notifications:
